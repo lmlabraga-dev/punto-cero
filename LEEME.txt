@@ -1,0 +1,29 @@
+PUNTO CERO - VERSIÓN ANDROID
+============================
+
+Opción A (APK con Android Studio, recomendada)
+1. Instala Android Studio (gratis): https://developer.android.com/studio
+2. Abre la carpeta "android" de este zip (File > Open).
+3. Espera a que termine "Gradle Sync" (la primera vez descarga lo necesario).
+4. Conecta tu teléfono por USB con "Depuración USB" activada y pulsa ▶ Run,
+   o genera el instalador: Build > Build Bundle(s) / APK(s) > Build APK(s).
+   El APK queda en android/app/build/outputs/apk/debug/app-debug.apk
+   Cópialo al teléfono y ábrelo (permite "instalar apps desconocidas").
+5. Para Google Play: Build > Generate Signed Bundle (AAB) con tu clave.
+
+Si actualizas el juego (www/index.html):  npm install  y luego  npx cap copy android
+
+Opción C (APK sin instalar Android Studio, con GitHub)
+1. Crea una cuenta gratis en github.com y un repositorio nuevo (privado).
+2. Sube TODO el contenido de este zip (botón "Add file > Upload files"),
+   incluida la carpeta oculta .github.
+3. Ve a la pestaña "Actions": se construye solo en unos 5 minutos.
+4. Entra en la ejecución terminada y descarga "PuntoCero-apk" (zip con el
+   app-debug.apk). Cópialo al teléfono e instálalo.
+
+Opción B (sin instalar nada)
+Abre el enlace del juego en Chrome para Android > menú ⋮ > "Añadir a pantalla
+de inicio". Funciona con los mismos controles táctiles.
+
+Datos: id de la app com.puntocero.juego · horizontal · pantalla completa · la
+pantalla no se apaga mientras juegas. Requiere Android 7.0 o superior.
